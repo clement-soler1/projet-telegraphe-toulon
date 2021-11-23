@@ -11,7 +11,9 @@ services:
       - POSTGRES_USER=postgres
       - PGDATA=/var/lib/postgresql/data
   web:
-    build: ./
+    build: 
+      context: .
+      dockerfile: docker/python/Dockerfile
     command: /bin/sh -c "./compose.sh"
     container_name: telegraph_app
     volumes:
