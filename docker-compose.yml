@@ -6,15 +6,15 @@ services:
     ports:
       - "5435:5432"
     environment:
-      - POSTGRES_DB=Ceresia
+      - POSTGRES_DB=telegraph
       - POSTGRES_PASSWORD=0150
       - POSTGRES_USER=postgres
       - PGDATA=/var/lib/postgresql/data
   web:
     build: ./
     command: /bin/sh -c "./compose.sh"
-    container_name: ceresia_app
+    container_name: telegraph_app
     volumes:
-      - .:/ceresia_app
+      - .:/telegraph_app
     ports:
       - "8000:8000"
