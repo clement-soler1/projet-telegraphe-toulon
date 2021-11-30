@@ -6,10 +6,6 @@
   <img align="center" width="300" height="auto" src="https://www.riviera-network.org/wp-content/uploads/2015/04/CNAM-PACA-logo-615-150.jpg">
 </p>
 
-## Présentation du projet
-
-TO DO
-
-## Equipe du projet
-
-TO DO
+## Branch de test pour le ml => food_wine_paring
+ - Data preparation in telegraph/wine_ml/data_prep.py
+ - paring and recommandation in telegraph/recommendation/reco_algo.py
