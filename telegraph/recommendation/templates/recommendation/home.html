@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ {{ hello}}
+{%if food is not null %}
+    {% for f in food %}
+ <p> {{f}} </p>
+
+    {% endfor %}
+ {%endif%}
+{%if appetizer is not null %}
+    {% for a in appetizer %}
+        <p>{{a}}</p>
+    {% endfor %}
+ {%endif%}
+{%if entree is not null %}
+    {% for e in entree %}
+            <p>{{e}}</p>
+    {% endfor %}
+ {%endif%}
+{%if dessert is not null %}
+    {% for d in dessert %}
+ <p>{{d}}</p>
+    {% endfor %}
+ {%endif%}
+
+<form action="/pair_wine" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
