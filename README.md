@@ -7,3 +7,5 @@
 </p>
 
 ## Branch de test pour le ml => food_wine_paring
+ - Data preparation in telegraph/wine_ml/data_prep.py
+ - paring and recommandation in telegraph/recommendation/reco_algo.py
